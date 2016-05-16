@@ -33,6 +33,7 @@ correct spelling of the words can run backwards or forwards.
 
 * Words should be output in order. Ordering is determined entirely by the first letter of the found word. A word whose first letter is at a lower ordered square should be output before a word whose first letter is at a higher number.
 * In cases where two words both begin at the same location, directionality should be used to break ordering ties in this order: horizontal left-to-right, horizontal right-to-left, vertical top-to-bottom, vertical bottom-to-top, diagonal left-to-right downwards, diagonal left-to-right upwards, diagonal right-to-left downwards, diagonal left-to-right upwards.
+* In the rare case of a palindrome, the version of the palindrome detected with a lower ordering should be detected as the "true" word.
 
 For consistency, the following protocols must also be followed in your solution:
 
