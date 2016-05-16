@@ -47,11 +47,9 @@ For consistency, the following protocols must also be followed in your solution:
 ### Sample Data
 
 #### Invocation
-`./crack_wsp.rb /path/to/input_file.txt`
+`./crack_wsp.rb /path/to/input_matrix.txt path/to/dictionary.txt`
 
-#### Input
-
-`input_file.txt (and assuming a full English dictionary)`
+#### Input Matrix
 
 ````
 Q H E L L O
@@ -60,6 +58,23 @@ S R A M Q Q
 Q Q O Q Q Q
 Q Q Q M Q Q
 ````
+
+#### Input Dictionary
+
+````
+from
+hello
+many
+mars
+once
+time
+upon
+words
+world
+
+````
+
+
 #### Output
 
 ````
