@@ -37,17 +37,16 @@ correct spelling of the words can run backwards or forwards.
 For consistency, the following protocols must also be followed in your solution:
 
 * The format of input data should exactly match the sample data below.
-* The format of output data should exactly match the sample output data below, with all found words sorted in lexicographical order.
-* The dictionary of possible words will be provided in the attachments, with each word on a separate line. Only these words can be found.
-* It should be possible to swap dictionaries in case the language used for the encryption ever changes.
+* The format of output data should exactly match the sample output data below, with all found words in order according to the rules above, with each word separated by a newline.
+* It should be possible to swap dictionaries in case the language used for the encryption ever changes, but in general /usr/share/dict/words can be provided as the dictionary as the second command line argument to invoke your program.
 * Analysts must be able to invoke your program from a command line. The input file should be provided with a single command line argument.
-* All output should be written to standard output.
+* All output should be written to standard output. When you'd like to save your output, you can redirect it to a file by using ` > output` at the end of your invocation.
 * The choice of language is up to you, but Python and Ruby are encouraged.
 
 ### Sample Data
 
 #### Invocation
-`./crack_wsp.rb /path/to/input_matrix.txt path/to/dictionary.txt`
+`./crack_wsp.rb /path/to/input_matrix.txt /usr/share/dict/words`
 
 #### Input Matrix
 
@@ -58,22 +57,6 @@ S R A M Q Q
 Q Q O Q Q Q
 Q Q Q M Q Q
 ````
-
-#### Input Dictionary
-
-````
-from
-hello
-many
-mars
-once
-time
-upon
-words
-world
-
-````
-
 
 #### Output
 
